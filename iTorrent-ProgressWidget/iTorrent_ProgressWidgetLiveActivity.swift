@@ -112,24 +112,24 @@ struct iTorrent_ProgressWidgetLiveActivity: Widget {
         }
     }
 }
-
-@available(iOSApplicationExtension 16.2, *)
-struct LiveActivityWidgetExtensionLiveActivity_Previews: PreviewProvider {
-    static let attributes = iTorrent_ProgressWidgetAttributes(name: "Naruto", hash: "")
-    static let contentState = iTorrent_ProgressWidgetAttributes.ContentState(progress: 0.5, downSpeed: 1500300, upSpeed: 53000, timeRemainig: "10 min", timeStamp: Date())
-
-    static var previews: some View {
-        attributes
-            .previewContext(contentState, viewKind: .dynamicIsland(.compact))
-            .previewDisplayName("Island Compact")
-        attributes
-            .previewContext(contentState, viewKind: .dynamicIsland(.expanded))
-            .previewDisplayName("Island Expanded")
-        attributes
-            .previewContext(contentState, viewKind: .dynamicIsland(.minimal))
-            .previewDisplayName("Minimal")
-        attributes
-            .previewContext(contentState, viewKind: .content)
-            .previewDisplayName("Notification")
-    }
-}
+//
+//@available(iOSApplicationExtension 16.2, *)
+//struct LiveActivityWidgetExtensionLiveActivity_Previews: PreviewProvider {
+//    static let attributes = iTorrent_ProgressWidgetAttributes(name: "Naruto", hash: "")
+//    static let contentState = iTorrent_ProgressWidgetAttributes.ContentState(progress: 0.5, downSpeed: 1500300, upSpeed: 53000, timeRemainig: "10 min", timeStamp: Date())
+//
+//    static var previews: some View {
+//        attributes
+//            .previewContext(contentState, viewKind: .dynamicIsland(.compact))
+//            .previewDisplayName("Island Compact")
+//        attributes
+//            .previewContext(contentState, viewKind: .dynamicIsland(.expanded))
+//            .previewDisplayName("Island Expanded")
+//        attributes
+//            .previewContext(contentState, viewKind: .dynamicIsland(.minimal))
+//            .previewDisplayName("Minimal")
+//        attributes
+//            .previewContext(contentState, viewKind: .content)
+//            .previewDisplayName("Notification")
+//    }
+//}

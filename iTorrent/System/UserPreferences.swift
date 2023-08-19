@@ -90,9 +90,7 @@ class UserPreferences {
         SettingProperty<Bool>("alertDialog" + code, false)
     }
     
-    static var disableAds: Bool {
-        UserPreferences.patreonAccount?.hideAds ?? false
-    }
+    static var disableAds: Bool = true
 
     @PreferenceData("fullscreenAdShownDate", nil) static var dateFSAdShown: Date?
 }
